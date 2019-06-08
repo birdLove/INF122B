@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <!-- Bootstrap -->
+   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="bower_components/jquery-ui/themes/redmond/jquery-ui.min.css" rel="stylesheet">
+<style>
+body {
+background-color:lavender;
+}
+
+article {
+	margin-top: 200px;
+	margin-bottom: 200px;
+    margin-left: 400px;
+    overflow: hidden;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ol a {
+    text-decoration: none;
+}
+</style>
+        <meta charset="UTF-8">
+        <title>Login Page</title>  
+</head>
+<body>
+        <header>
+        <h1 style="color:white;">Fabflix</h1>
+        <p style="color:white;">Site for movies</p>
+        </header> 
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+
+<a href="main.html">Main page</a>
+<a href="index2.html">Logout</a>
+
+<h2> Employee Dashboard</h2>
+    <a href="Parser?insert=0">Parse Movies/Genres</a> <br>
+    <a href="Parser?insert=1">Parse Stars in movies</a> <br>
+    <a href="Parser?insert=2">Parse Actors</a> <br>
+   <article>
+<form method="get" action="add_Movie">
+
+  <div class="container">
+     <label><b>Movie ID: </b></label>
+    <input type="TEXT" name="movieID">
+	<br>
+    <label><b>Title: </b></label>
+    <input type="TEXT" name="title">
+	<br>
+	<label><b>Year: </b></label>
+	<input type="NUMBER" name="year">
+	<br>
+	<label><b>Director's name: </b></label>
+	<input type="TEXT" name="director">
+	<br>
+	<label><b>Actor: </b></label>
+    <input type="TEXT" name="star">
+    <br>
+	<label><b>Genre: </b></label>
+    <input type="TEXT" name="genre">
+   
+    
+    <br>
+    
+     <input TYPE="SUBMIT" VALUE="Add Movie">
+  </div>
+
+
+</form>
+</article>
+
+
+<ul style="list-style-type:square">
+  <li><a href="showTables?table=creditcards">creditcards</a></li>
+  <li><a href="showTables?table=customers">customers</a></li>
+  <li><a href="showTables?table=employees">employees</a></li>
+  <li><a href="showTables?table=genres">genres</a></li>
+  <li><a href="showTables?table=genres_in_movies">genres_in_movies</a></li>
+  <li><a href="showTables?table=movies">movies</a></li>
+  <li><a href="showTables?table=ratings">ratings</a></li>
+  <li><a href="showTables?table=sales">sales</a></li>
+  <li><a href="showTables?table=stars">stars</a></li>
+  <li><a href="showTables?table=stars_in_movies">stars_in_movies</a></li>
+</ul>
+
+<footer><small>copyright Fabflix: 2018</small></footer>
+
+</body>
+</html>

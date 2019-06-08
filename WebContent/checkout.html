@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <!-- Bootstrap -->
+   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="bower_components/jquery-ui/themes/redmond/jquery-ui.min.css" rel="stylesheet">
+<style>
+body {
+background-color:lavender;
+}
+
+article {
+	margin-top: 200px;
+	margin-bottom: 200px;
+    margin-left: 400px;
+    overflow: hidden;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ol a {
+    text-decoration: none;
+}
+</style>
+        <meta charset="UTF-8">
+        <title>Login Page</title>  
+</head>
+<body>
+        <header>
+        <h1 style="color:white;">Fabflix</h1>
+        <p style="color:white;">Site for movies</p>
+        </header> 
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <article>
+
+
+<p>Please enter information matching the same credit card as in the database</p>
+
+<form ACTION="/Project1/checkout"
+      METHOD="POST">
+
+  <div class="container">
+    <label><b>First Name: </b></label>
+    <input type="TEXT" placeholder="Enter First Name" name="firstname" required>
+	<br>
+	 <label><b>Last Name: </b></label>
+	<input type="TEXT" placeholder="Enter Last Name" name="lastname" required>
+	<br>
+	 <label><b>Credit Card Number: </b></label>
+	<input type="TEXT" placeholder="Enter Credit card" name="creditcard" required>
+	<br>
+	 <label><b>Expiration Date:</b></label>
+	<input type="DATE" placeholder="Enter expire date(x/x/xx)" name="expiredate" required>
+	<br>
+    <br>
+     <input TYPE="SUBMIT" VALUE="Submit">
+  </div>
+
+</form>
+</article>
+<footer><small>copyright Fabflix: 2018</small></footer>
+
+</body>
+</html>
+

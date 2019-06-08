@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <!-- Bootstrap -->
+   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="bower_components/jquery-ui/themes/redmond/jquery-ui.min.css" rel="stylesheet">
+<style>
+body {
+background-color:lavender;
+}
+
+article {
+    position:absolute;
+    top: 50%;
+    left: 40%;
+
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ol a {
+    text-decoration: none;
+}
+</style>
+        <meta charset="UTF-8">
+        <title>Login Page</title>  
+       <script src='https://www.google.com/recaptcha/api.js'></script>       
+</head>
+<body>
+        <header>
+        <h1 style="color:white;">Fabflix</h1>
+        <p style="color:white;">Site for movies</p>
+        </header> 
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+    <a href="index2.html">Employee login</a>
+    <br>
+    <img src="cinema.jpg" alt="Picture"> 
+    <br>
+    <article>
+<form ACTION="/Project1/form"
+      METHOD="POST">
+
+
+  <div class="container">
+    <label><b>Email</b></label>
+    <input type="TEXT" placeholder="Enter Email" name="email" required>
+	<br>
+    <label><b>Password</b></label>
+    <input type="PASSWORD" placeholder="Enter Password" name="password" required>
+    <br>
+     <input TYPE="SUBMIT" VALUE="Login">
+     <div class="g-recaptcha" data-sitekey="6LdeglcUAAAAANy_z7yxHZjn2ecE1FbX2Q_ZAxTy"></div>
+  </div>
+
+</form>
+</article>
+<footer><small>copyright Fabflix: 2018</small></footer>
+
+</body>
+</html>

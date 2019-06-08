@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <!-- Bootstrap -->
+   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="bower_components/jquery-ui/themes/redmond/jquery-ui.min.css" rel="stylesheet">
+<style>
+body {
+background-color:lavender;
+}
+
+article {
+	margin-top: 200px;
+	margin-bottom: 200px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+div {
+    margin-left: 400px;
+    margin-bottom: 100px;
+    height: 300px;
+    width: 300px;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ol a {
+    text-decoration: none;
+}
+</style>
+        <meta charset="UTF-8">
+        <title>Employee Login Page</title>   
+</head>
+<body>
+        <header>
+        <h1 style="color:white;">Fabflix</h1>
+        <p style="color:white;">Site for movies - EMPLOYEE PAGE</p>
+        </header> 
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    
+    <a href="index.html">Customer login page</a>
+    <div> <img src="download.jpg" alt="Picture" height="500" width="500"> </div>
+    <article>
+<form ACTION="/Project1/SendToDashboard"
+      METHOD="POST">
+
+  <div class="container">
+    <label><b>Email</b></label>
+    <input type="TEXT" placeholder="Enter Email" name="empEmail" required>
+	<br>
+    <label><b>Password</b></label>
+    <input type="PASSWORD" placeholder="Enter Password" name="empPassword" required>
+    <br>
+     <input TYPE="SUBMIT" VALUE="Login">
+  </div>
+
+</form>
+</article>
+<footer><small>copyright Fabflix: 2018</small></footer>
+
+</body>
+</html>

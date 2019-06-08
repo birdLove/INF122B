@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>CS 122B AutoComplete</title>
+
+    <!-- Using jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<style>
+body {
+background-color:lavender;
+}
+
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ol a {
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+ <header>
+        <h1 style="color:white;">Fabflix</h1>
+        <p style="color:white;">Main page</p>
+        </header> 
+        	<br>
+    
+        
+<ol>
+  <li><a href="Browsing">Browse List</a></li>
+  <li><a href="search.html">Search List</a></li>
+  <li><a href="cart.html">Shopping Cart</a></li>
+  <li><a href="index.html">Logout</a></li>
+</ol>
+
+	<label><b>SEARCH</b></label>
+        <input type="TEXT" name="hero" placeholder="Enter Title" id="autocomplete"/>
+    	<script src="searchBar.js"></script>
+    	<button id="searchButton" name="searchButton" onclick='search()'>Search</button> 
+    <br>
+   <img src="tinyMovie.jpg" alt="Picture" height="500" width="500">
+  <br>
+<footer><small>copyright Fabflix: 2018</small></footer>
+
+</body>
+
+</html>

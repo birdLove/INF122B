@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <!-- Bootstrap -->
+   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="bower_components/jquery-ui/themes/redmond/jquery-ui.min.css" rel="stylesheet">
+<style>
+body {
+background-color:lavender;
+}
+
+article {
+	margin-top: 100px;
+	margin-bottom: 200px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+div {
+    margin-left: 400px;
+    height: 200px;
+    width: 200px;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ol a {
+    text-decoration: none;
+}
+</style>
+        <meta charset="UTF-8">
+        <title>Login Page</title>  
+</head>
+<body>
+        <header>
+        <h1 style="color:white;">Fabflix</h1>
+        <p style="color:white;">Site for movies</p>
+        </header> 
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+
+<a href="main.html">Main page</a>
+
+<h2> SEARCH BY ADVANCED SEARCH</h2>
+    <div> <img src="search.jpg" alt="Picture" height="200" width="200"> </div>
+
+   <article>
+<form method="get" action="searchServlet.html">
+
+  <div class="container">
+    <label><b>Title: </b></label>
+    <input type="TEXT" name="title">
+	<br>
+	<label><b>Year: </b></label>
+	<input type="NUMBER" name="year">
+	<br>
+	<label><b>Director's name: </b></label>
+	<input type="TEXT" name="director">
+	<br>
+	<label><b>Actors: </b></label>
+    <input type="TEXT" name="star">
+    <input type="hidden" name="offset" value=0>
+
+    
+    <br>
+    
+     <input TYPE="SUBMIT" VALUE="Search">
+  </div>
+
+
+</form>
+</article>
+<footer><small>copyright Fabflix: 2018</small></footer>
+
+</body>
+</html>
